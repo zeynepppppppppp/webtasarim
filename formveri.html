@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Form Verileri</title>
+</head>
+<body>
+
+  <h1>Gönderdiğiniz Bilgiler</h1>
+
+  <script>
+
+    var degerler = new URLSearchParams(window.location.search)
+    var isim = degerler.get("isim")
+    var eposta = degerler.get("eposta")
+    var sehir = degerler.get("sehir")
+
+      document.write("<p>İsim: <b>  "+isim +" </b></p>")
+      document.write("<p>E-posta: <b> " + eposta +"</b></p>")
+      document.write("  <p>Önerilen Şehir: <b> " + sehir + " </b></p>")
+      
+  </script>
+
+
+  <p>Not: Bu veriler URL üzerinden geldiği için adres çubuğunda görebilirsiniz.</p>
+  <hr>
+  <a href="iletisim.html">Geri Dön</a>
+</body>
+</html>
