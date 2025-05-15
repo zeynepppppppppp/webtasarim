@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Rome</title>
+    <link rel="stylesheet" href="../style/navbar.css">
+    <link rel="stylesheet" href="../style/responsive.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+  
+<body>
+
+  <div id="navbar-container"></div>
+
+  <script>
+    fetch("../components/navbar.html")
+      .then(res => res.text())
+      .then(data => {
+        document.getElementById("navbar-container").innerHTML = data;
+      });
+  </script>
+
+  <h1>Rome</h1>
+  <img src="../resimler/rome.jpg" alt="Rome" width="400">
+  <p>İtalya’nın başkenti ve tarih dolu bir açık hava müzesi gibidir. Antik Roma'nın izlerini taşıyan büyüleyici bir şehir.</p>
+
+  <h3>Gezilecek Yerler</h3>
+  <table border="1">
+    <tr>
+      <th>Yer</th>
+      <th>Açıklama</th>
+    </tr>
+    <tr>
+      <td>Kolezyum</td>
+      <td>Antik Roma’nın en büyük amfi tiyatrosu. Gladyatör dövüşlerinin yapıldığı yer.</td>
+    </tr>
+    <tr>
+      <td>Trevi Çeşmesi</td>
+      <td>Ünlü dilek çeşmesi. Sırtını dönüp bozuk para atarsan tekrar Roma’ya gelirsin derler.</td>
+    </tr>
+  </table>
+
+
+</body>
+</html>

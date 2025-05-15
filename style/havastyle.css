@@ -1,0 +1,80 @@
+select {
+    padding: 8px;
+    font-size: 16px;
+  }
+  
+  #weatherResult {
+    border: 1px solid #ccc;
+    padding: 15px;
+    width: 250px;
+    background-color: #42b1d3;
+    border-radius: 10px;
+  }
+  
+
+  body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(to right, #f0f8ff, #e1f5fe);
+  color: #333;
+  margin: 0;
+  padding: 20px;
+  text-align: center;
+}
+
+h1 {
+  color: #0277bd;
+  font-size: 32px;
+  margin-top: 40px;
+}
+
+label {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+select {
+  padding: 10px 20px;
+  font-size: 16px;
+  margin-left: 10px;
+  border-radius: 6px;
+  border: 1px solid #90caf9;
+  background-color: white;
+  color: #0277bd;
+  transition: all 0.3s ease;
+}
+
+select:hover {
+  border-color: #0277bd;
+  background-color: #e3f2fd;
+}
+
+#weatherResult {
+  margin-top: 30px;
+  font-size: 20px;
+  font-weight: bold;
+  background-color: #ffffffcc;
+  padding: 20px;
+  border-radius: 10px;
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive destek */
+@media screen and (max-width: 600px) {
+  h1 {
+    font-size: 26px;
+  }
+
+  select {
+    width: 90%;
+    margin-top: 10px;
+    margin-left: 0;
+  }
+
+  #weatherResult {
+    font-size: 18px;
+    width: 90%;
+  }
+}
