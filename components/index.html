@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Gezilecek Şehirler</title>
+</head>
+
+<body>
+  <link rel="stylesheet" href="style/responsive.css">
+
+  <link rel="stylesheet" href="style\navbar.css">
+
+  <div id="navbar-container"></div>
+
+  <script>
+    fetch("components/navbar.html")
+      .then(res => res.text())
+      .then(data => {
+        document.getElementById("navbar-container").innerHTML = data;
+      });
+  </script>
+
+<div>
+  <h1>Avrupa'nın En Güzel Şehirleri</h1>
+  <p>Haritada tıklayarak şehir sayfalarına ulaşabilirsiniz.</p>
+</div>
+
+  <img src="resimler\avrupaharitasi.png" usemap="#sehirler" alt="Avrupa Haritası" width="600">
+
+
+  <map name="sehirler">
+    <area src shape="rect" coords="180,200,240,250" href="sayfalar/paris.html" alt="Paris">
+    <area shape="rect" coords="280,280,360,320" href="sayfalar/rome.html" alt="Tokyo">
+    <area shape="rect" coords="440,280,500,320" href="sayfalar/istanbul.html" alt="İstanbul">
+    <area shape="rect" coords="280,80,360,120" href="sayfalar/stockholm.html" alt="New York">
+    <area shape="rect" coords="340,160,380,190" href="sayfalar/varsova.html" alt="New York">
+  </map>
+
+
+  
+</body>
+
+</html>
