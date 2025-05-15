@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hava Durumu</title>
+  <link rel="stylesheet" href="/style/havastyle.css">
+  <link rel="stylesheet" href="/style/navbar.css">
+  <link rel="stylesheet" href="/style/responsive.css">
+</head>
+
+<body>
+
+  <!-- Navbar Dinamik Yükleme -->
+  <div id="navbar-container"></div>
+
+  <script>
+    fetch("/components/navbar.html")
+      .then(res => res.text())
+      .then(data => {
+        document.getElementById("navbar-container").innerHTML = data;
+      })
+      .catch(error => console.error("Navbar yüklenemedi:", error));
+  </script>
+
+  <!-- Sayfa İçeriği -->
+  <h1>Şehir Hava Durumu</h1>
+
+  <label for="city">Şehir seçin:</label>
+  <select id="city" onchange="showWeather()">
+    <option value="">--Seçin--</option>
+    <option value="paris">Paris</option>
+    <option value="stockholm">Stockholm</option>
+    <option value="tokyo">Tokyo</option>
+    <option value="rome">Roma</option>
+    <option value="warsaw">Varşova</option>
+  </select>
+
+  <div id="weatherResult" style="margin-top: 20px;"></div>
+
+  <script src="/scripts/havastyle.js"></script>
+</body>
+
+</html>

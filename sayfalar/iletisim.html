@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>İletişim</title>
+</head>
+<body>
+
+  <link rel="stylesheet" href="../style/navbar.css">
+  <link rel="stylesheet" href="../style/responsive.css">
+  <link rel="stylesheet" href="../style/iletisim.css">
+
+
+
+  <div id="navbar-container"></div>
+
+  <script>
+    fetch("../components/navbar.html")
+      .then(res => res.text())
+      .then(data => {
+        document.getElementById("navbar-container").innerHTML = data;
+      });
+  </script>
+  <h1>Şehir Önerisi Gönder</h1>
+  <form action="formveri.html" method="get">
+    <label>İsim:</label><br>
+    <input type="text" name="isim"><br><br>
+
+    <label>E-posta:</label><br>
+    <input type="email" name="eposta"><br><br>
+
+    <label>Önerdiğiniz Şehir:</label><br>
+    <input type="text" name="sehir"><br><br>
+
+    <input type="submit" value="Gönder">
+  </form>
+  <hr>
+  <a href="../index.html">Anasayfa</a>
+</body>
+</html>
