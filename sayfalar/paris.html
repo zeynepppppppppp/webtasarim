@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html>
-
 <head>
   <meta charset="UTF-8">
   <title>Paris</title>
@@ -8,23 +7,33 @@
   <link rel="stylesheet" href="../style/responsive.css">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
-
 <body>
-
-
-  <div id="navbar-container"></div>
-
+  <div id="navbar-container">
+    <!-- Navbar will be inserted here -->
+  </div>
+  
   <script>
-    fetch("../components/navbar.html")
-      .then(res => res.text())
-      .then(data => {
-        document.getElementById("navbar-container").innerHTML = data;
-      });
+    // Create navbar directly with JavaScript instead of fetch
+    document.getElementById("navbar-container").innerHTML = `
+      <nav class="navbar">
+        <ul>
+          <li><a href="../index.html" target="_top">Anasayfa</a></li>
+          <li><a href="./paris.html" target="_top">Paris</a></li>
+          <li><a href="./rome.html" target="_top">Rome</a></li>
+          <li><a href="./stockholm.html" target="_top">Stockholm</a></li>
+          <li><a href="./varsova.html" target="_top">Varşova</a></li>
+          <li><a href="./quiz.html" target="_top">Quiz</a></li>
+          <li><a href="./hava.html" target="_top">Hava</a></li>
+          <li><a href="./formveri.html" target="_top">Form</a></li>
+          <li><a href="./iletisim.html" target="_top">İletişim</a></li>
+        </ul>
+      </nav>
+    `;
   </script>
+  
   <h1>Paris</h1>
   <img src="../resimler/paris.jpg" alt="Paris" width="400">
   <p>Fransa'nın başkenti olan Paris, Eyfel Kulesi ve tarihiyle ünlüdür.</p>
-
   <h3>Gezilecek Yerler</h3>
   <table border="1">
     <tr>
@@ -40,8 +49,5 @@
       <td>Dünyanın en büyük sanat müzesi</td>
     </tr>
   </table>
-
-
 </body>
-
 </html>
