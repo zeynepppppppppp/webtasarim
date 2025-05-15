@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>Stockholm</title>
+  <link rel="stylesheet" href="../style/navbar.css">
+  <link rel="stylesheet" href="../style/responsive.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+
+
+
+  <div id="navbar-container"></div>
+
+  <script>
+    fetch("../components/navbar.html")
+      .then(res => res.text())
+      .then(data => {
+        document.getElementById("navbar-container").innerHTML = data;
+      });
+  </script>
+  <h1>Stockholm</h1>
+  <img src="../resimler/stockholm.jpg" alt="Stockholm" width="400">
+  <p>İsveç’in başkenti. 14 adadan oluşur, köprülerle birbirine bağlıdır. Temiz, düzenli ve tarihiyle modernliği
+    birleştiren bir şehir.</p>
+
+  <h3>Gezilecek Yerler</h3>
+  <table border="1">
+    <tr>
+      <th>Yer</th>
+      <th>Açıklama</th>
+    </tr>
+    <tr>
+      <td>Gamla Stan</td>
+      <td>Stockholm’ün tarihi merkezi. Renkli binalar, dar sokaklar ve Kraliyet Sarayı burada.</td>
+    </tr>
+    <tr>
+      <td>Vasa Müzesi</td>
+      <td>17. yüzyılda batan Vasa gemisi sergileniyor. Dünyanın en iyi korunmuş savaş gemilerinden biri.</td>
+    </tr>
+  </table>
+
+</body>
+
+</html>

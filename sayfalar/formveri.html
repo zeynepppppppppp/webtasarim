@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>İletişim Formu</title>
+  <link rel="stylesheet" href="../style/navbar.css">
+  <link rel="stylesheet" href="../style/responsive.css">
+  <link rel="stylesheet" href="../style/formveri.css">
+  <script src="../scripts/form.js" defer></script>
+</head>
+
+
+
+
+  <div id="navbar-container"></div>
+
+  <script>
+    fetch("../components/navbar.html")
+      .then(res => res.text())
+      .then(data => {
+        document.getElementById("navbar-container").innerHTML = data;
+      });
+  </script>
+
+<body style="background-color: lightyellow;">
+
+  <h1>İletişim Formu</h1>
+
+  <form id="form">
+    <label>İsim:</label><br>
+    <input type="text" id="isim" required><br><br>
+
+    <label>E-posta:</label><br>
+    <input type="email" id="eposta" required><br><br>
+
+    <label>Önerdiğiniz Şehir:</label><br>
+    <input type="text" id="sehir" required><br><br>
+
+    <button type="submit">Gönder</button>
+  </form>
+
+  <hr>
+
+  <h2>Gönderilen Bilgiler</h2>
+  <table border="1" id="veriTablosu">
+    <tr>
+      <th>İsim</th>
+      <th>E-posta</th>
+      <th>Önerilen Şehir</th>
+    </tr>
+  </table>
+ 
+
+</body>
+</html>

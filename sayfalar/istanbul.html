@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>İstanbul</title>
+  <link rel="stylesheet" href="../style/navbar.css">
+  <link rel="stylesheet" href="../style/responsive.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+
+
+
+
+
+  <div id="navbar-container"></div>
+
+  <script>
+    fetch("../components/navbar.html")
+      .then(res => res.text())
+      .then(data => {
+        document.getElementById("navbar-container").innerHTML = data;
+      });
+  </script>
+
+
+  <h1>İstanbul</h1>
+  <img src="../resimler/istanbul.jpg" alt="İstanbul" width="400">
+  <p>İstanbul, hem Avrupa hem Asya kıtalarında yer alan, tarihi ve kültürel zenginliğiyle eşsiz bir şehirdir.</p>
+
+  <h3>Gezilecek Yerler</h3>
+  <table border="1">
+    <tr>
+      <th>Yer</th>
+      <th>Açıklama</th>
+    </tr>
+    <tr>
+      <td>Ayasofya</td>
+      <td>Bizans ve Osmanlı izlerini taşıyan ikonik yapı.</td>
+    </tr>
+    <tr>
+      <td>Kapalıçarşı</td>
+      <td>Yüzyıllardır ayakta olan geleneksel alışveriş merkezi.</td>
+    </tr>
+  </table>
+
+
+</body>
+
+</html>
