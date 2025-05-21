@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Hava Durumu</title>
+  <link rel="stylesheet" href="../havastyle.css">
+</head>
+<body>
+  <h1>Şehir Hava Durumu</h1>
+
+  <label for="city">Şehir seçin:</label>
+  <select id="city" onchange="showWeather()">
+    <option value="">--Seçin--</option>
+    <option value="paris">Paris</option>
+    <option value="stockholm">Stockholm</option>
+    <option value="tokyo">Tokyo</option>
+    <option value="rome">Roma</option>
+    <option value="warsaw">Varşova</option>
+  </select>
+
+  <div id="weatherResult" style="margin-top: 20px;"></div>
+
+  <a href="../index.html">Anasayfa</a> | 
+  <a href="paris.html">Paris</a> | 
+  <a href="stockholm.html">Stockholm</a> | 
+  <a href="istanbul.html">İstanbul</a> | 
+  <a href="varsova.html">Varşova</a> | 
+  <a href="rome.html">Rome</a> | 
+  <a href="quiz.html">Quiz ol!</a> | 
+  <a href="iletisim.html">İletişim</a>
+
+
+  <script src="../scripts/havascript.js"></script>
+</body>
+</html>
