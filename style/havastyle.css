@@ -1,0 +1,13 @@
+select {
+    padding: 8px;
+    font-size: 16px;
+  }
+  
+  #weatherResult {
+    border: 1px solid #ccc;
+    padding: 15px;
+    width: 250px;
+    background-color: #42b1d3;
+    border-radius: 10px;
+  }
+  

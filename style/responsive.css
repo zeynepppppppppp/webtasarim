@@ -1,0 +1,72 @@
+/* Genel sayfa stili */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    box-sizing: border-box;
+    background-color: #f9f9f9;
+  }
+  
+  /* Başlık */
+  h1 {
+    text-align: center;
+    color: #333;
+  }
+  
+  /* Resim */
+  img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto 20px;
+    border-radius: 10px;
+  }
+  
+  /* Tablo */
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  
+  th, td {
+    padding: 12px;
+    border: 1px solid #ccc;
+    text-align: left;
+  }
+  
+  /* Menü bağlantıları */
+  hr {
+    margin-top: 30px;
+  }
+  
+  a {
+    margin: 0 5px;
+    text-decoration: none;
+    color: #007bff;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Responsive yapı */
+  @media (max-width: 600px) {
+    body {
+      padding: 10px;
+    }
+  
+    table, th, td {
+      font-size: 14px;
+    }
+  
+    img {
+      width: 100%;
+    }
+  
+    a {
+      display: block;
+      margin: 5px 0;
+    }
+  }
+  
